@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ⚡ʏв ωαтcн ωσяℓ∂ ⚡</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo"></div>
+
+        <!-- Menu Button -->
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+ <script>
+    let nav = document.getElementById("nav-links");
+    let icon = document.getElementById("menu-icon");
+    let isOpen = false;
+
+    // hamburger button handle
+    document.querySelector(".menu-btn").addEventListener("click", function () {
+        if (!isOpen) {
+            nav.style.right = "0";              // menu open
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");     // change to cross
+            isOpen = true;
+        } else {
+            nav.style.right = "-100%";          // menu close
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");      // back to bars
+            isOpen = false;
+        }
+    });
+
+    // sabhi nav links par listener lagao
+    const navLinksAll = document.querySelectorAll("#nav-links li a");
+    navLinksAll.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.style.right = "-100%";          // menu close
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");      // back to bars
+            isOpen = false;
+        });
+    });
+</script>
+
+     <content>
+        <!-- <div class="main-pic"></div> -->
+         <img src="mens-watch-sale-design-template-7226af10381cc0a293ac92f618782dcf_screen.jpg" class="main-pic">
+         <a href="#collection" class="btn">Shop Now</a>
+    <section id="collection">
+        <div class="call">
+                <div class="call1">
+                    <div class="heading"><h2>Luxury Watches</h2></div>
+                </div>
+            <div class="call2">
+                 <div class="box1"><img src="omega.jpg" alt="Omega Watch"></div>
+                <div class="box2"><img src="lux.jpg" alt="Luxury Watch"></div>
+                <div class="box3"><img src="rolex.webp" alt="Rolex Watch"></div>
+            </div>
+        </div>  
+
+        <div class="theory">
+           <div class="boxa">
+            <h3>OMEGA</h3>
+            <p>Experience Swiss innovation and luxury redefined with every Omega timepiece.</p>
+           </div>
+           <div class="boxb">
+            <h3>RECHARD MILLE</h3>
+            <p>Engineered like a race car, worn as a masterpiece of art.</p>
+           </div>
+           <div class="boxc">
+            <h3>ROLEX</h3>
+            <p>The ultimate symbol of prestige and timeless excellence.</p>
+           </div> 
+        </div>
+    
+        <div class="call3">
+                <div class="call4">
+                    <div class="heading1">Analog Watches<h2></h2></div>
+               </div>
+            <div class="call5">
+                 <div class="box4"><img src="chronawebp.webp" alt="Chrona Watch"></div>
+                <div class="box5"><img src="eterna-kontiki-130-t.jpg" alt="Eterna Watch"></div>
+                <div class="box6"><img src="regilla.webp" alt="Regilla Watch"></div>
+            </div>
+        </div>  
+
+        <div class="theory1">
+            <div class="boxd">
+                <h3>Regalia</h3>
+                <p>A symbol of prestige, designed for those who rule every moment.</p>
+            </div>
+            <div class="boxe">
+                <h3>Eterna Luxe</h3>
+                <p>A legacy of luxury, designed to outlast generations.</p>
+            </div>
+            <div class="boxf">
+                <h3>Chronova</h3>
+                <p>A new era of watchmaking, crafted to last forever.</p>
+            </div> 
+        </div>
+
+        <div class="call6">
+            <div class="call7">
+                    <div class="heading"><h2>Digital Watches</h2></div>
+            </div>
+             <div class="call8">
+                 <div class="box7"><img src="gs.png" alt="Gshock Watch"></div>
+                <div class="box8"><img src="amb(1).png" alt="Amberane Watch"></div>
+                <div class="box9"><img src="wheel.jpg" alt="Wheel Watch"></div>
+            </div>
+        </div>  
+
+        <div class="theory2">
+            <div class="boxg">
+                <h3>G-Shock</h3>
+                <p>Unbreakable style for unstoppable lives.</p>
+            </div>
+            <div class="boxh">
+                <h3>Amberane</h3>
+                <p>Smart timekeeping for the modern generation.</p>
+            </div>
+            <div class="boxi">
+                <h3>Aurelia</h3>
+                <p>Crafted for elegance, designed for distinction.</p>
+            </div> 
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="me">
+            <h4>Learn More</h4>
+            <h1>About Us</h1>
+            <p>YB Watch World is your ultimate destination for all things watches. From luxurious analog timepieces to sleek digital designs, we offer a curated collection that caters to every taste and style. Explore our range of premium watches, discover detailed information about each model.....</p>
+        </div>
+    </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+        <h2 class="ch2">Contact Us</h2>
+        <div class="cwrapper">
+            <div class="cform">
+                <h3 class="ch3">Send Us A Message</h3>
+                <form action="thankyou.html" method="get">
+                    <div class="fgrp">
+                        <input type="text" name="Name" placeholder="Your Name..">
+                    </div>
+                     <div class="fgrp">
+                        <input type="email" name="email" placeholder="Your Email..">
+                    </div>
+                     <div class="fgrp">
+                        <textarea name="message" placeholder="Your Message..."></textarea>
+                    </div>
+                    
+                       <button type="submit">Send Message</button>
+                    
+                </form>
+                     </div>
+                <div class="cinfo">
+                    <h3 class="eh3">Contact Information</h3>
+                    <p class="pinfo"><i class="fa-solid fa-phone"></i>+91 95608 46824</p>
+                     <p class="pinfo"><i class="fa-solid fa-envelope"></i>yashuu19@gmail.com</p>
+                      <p class="pinfo"><i class="fa-solid fa-location-dot"></i>Sector 23 , Haryana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section >
+          <div class="social-linkcontainer">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+</section>
+ <footer>
+    <div class="foter">
+        <div class="f-panal4">
+            <a>Condition of use. </a>
+            <a>Privacy Choices.. </a>
+            <a>Privacy of ads... </a>
+        </div>  
+        
+        <div class="copyright">
+            © 1996-2025, YB Watch World.in, Inc. or its affiliates
+        </div>      
+    </div>
+    <div class="oner">
+        <p>⚡ Made by YASHU ⚡</p>
+    </div>
+</footer> 
+
+
+</body>
+</html>
